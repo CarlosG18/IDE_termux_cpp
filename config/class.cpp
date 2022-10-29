@@ -1,0 +1,9 @@
+#include "(NAME_CLASS).h"
+
+NAME_CLASS::NAME_CLASS(){
+
+}
+
+NAME_CLASS::~NAME_CLASS(){
+
+}
