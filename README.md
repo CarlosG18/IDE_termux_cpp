@@ -41,14 +41,14 @@ $ pkg install clang
 
 Acessando o repositório
 ```bash
-$ cd g18_ide
+$ cd IDE_termux_cpp
 ```
 **para criar um novo projeto:**
 ```bash
 $ new_p [nome do projeto]
 $ cd [nome do projeto]
 ```
-`obs` : para a criação do novo projeto você deve está no diretório: `~/g18_ide`
+`obs` : para a criação do novo projeto você deve está no diretório: `~/IDE_termux_cpp`
 
 **para criar uma classe:**
 
@@ -62,13 +62,13 @@ Para que a classe seja efetivamente criada basta executar o seguinte comando:
 ```bash
 $ new_c [nome da classe]
 ```
-`obs`: para a criação de uma nova classe você deve está no diretorio: `~/g18_ide/[nome do projeto]`
+`obs`: para a criação de uma nova classe você deve está no diretorio: `~/IDE_termux_cpp/[nome do projeto]`
 
 **construir e executar:**
 ```bash 
 $ build_run [nome do projeto] [nome da classe]
 ```
-`obs`: você só pode executar este comando no diretorio: `~/g18_ide/[nome do projeto]`
+`obs`: você só pode executar este comando no diretorio: `~/IDE_termux_cpp/[nome do projeto]`
 
 Com isso você está apto a desenvolver em c++ pelo termux.
 
