@@ -1,5 +1,4 @@
 
-
 # G18 - IDE termux for C++
 
 A simple "IDE" for the terminal (termux) to work with object-oriented programming in c++
@@ -52,6 +51,14 @@ $ cd [nome do projeto]
 `obs` : para a criação do novo projeto você deve está no diretório: `~/g18_ide`
 
 **para criar uma classe:**
+
+Primeiramente acesse o arquivo `name_class.txt`:
+```bash
+$ vim name_class.txt
+```
+Neste arquivo serão colocados os nomes das classes que serão  criadas, cada linha corresponde a uma classe.
+
+Para que a classe seja efetivamente criada basta executar o seguinte comando:
 ```bash
 $ new_c [nome da classe]
 ```
@@ -64,4 +71,5 @@ $ build_run [nome do projeto] [nome da classe]
 `obs`: você só pode executar este comando no diretorio: `~/g18_ide/[nome do projeto]`
 
 Com isso você está apto a desenvolver em c++ pelo termux.
+
 
