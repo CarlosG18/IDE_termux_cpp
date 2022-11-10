@@ -5,24 +5,30 @@
 
 int main(void){
 
-	std::string classe[50];
+	std::string s;
 
 	std::ifstream input("../../name_class.txt");
 	std::ofstream output1("class.h");
 	std::ofstream output2("class.cpp");
 
-	if(input.is_open()){
-		getline(input,classe[0]);
-		input.close();
-		output1 << "#ifndef " << classe[0] << "_H" << std::endl;                                                    output1 << "#define " << classe[0] << "_H\n\n";
-        	output1 << "class " << classe[0] << "{\n   private:\n\n    public:\n       " << classe[0] << "();\n   ~" << classe[0] << "();\n};\n#endif";
+	if(!input.is_open()){
+		std::cout << "ERRO! /n";
+	}
 
-		output2 << "#include \"" << classe[0] << ".h\"\n\
-n" << classe[0] << "::" << classe[0] << "(){\n\n}\n" << classe[0] << "::~" << classe[0] << "(){\n\n}";
-	}else{
-		std::cout << "nao foi possivel abrir o arquivo" << std::endl;
-	}	 
 
+	while(fin.good()){
+		fin >> s;
+
+		output1 << "#ifndef " << s  << "_H" << std::endl;
+                        output1 << "#define " << s << "_H\n\n";                                             output1 << "class " << s <
+< "{\n   private:\n\n    public:\n       " << s << "();\n   ~" << s << "();\n};\n#endif";
+
+                output2 << "#include \"" << s << ".h\"\n\
+n" << s  << "::" << s << "(){\n\n}\
+n" << s << "::~" << s << "(){\n\n}
+";
+
+	}
 	output1.close();
 	output2.close();
 
