@@ -16,18 +16,15 @@ int main(void){
 	}
 
 
-	while(fin.good()){
-		fin >> s;
+	while(input.good()){
+		input >> s;
 
 		output1 << "#ifndef " << s  << "_H" << std::endl;
-                        output1 << "#define " << s << "_H\n\n";                                             output1 << "class " << s <
-< "{\n   private:\n\n    public:\n       " << s << "();\n   ~" << s << "();\n};\n#endif";
+                output1 << "#define " << s << "_H\n\n";                                             output1 << "class " << s << "{\n   private:\n\n  public:\n" << s << "();\n   ~" << s << "();\n};\n#endif";
 
-                output2 << "#include \"" << s << ".h\"\n\
-n" << s  << "::" << s << "(){\n\n}\
-n" << s << "::~" << s << "(){\n\n}
-";
-
+                output2 << "#include \"" << s << ".h\"" << std::endl;
+		output2 << s << "::" << s << "(){\n\n}" << std::endl;
+		output2 << s << "::~" << s << "(){\n\n}";
 	}
 	output1.close();
 	output2.close();
