@@ -17,5 +17,6 @@ cd ..
 cd config
 cp main.cpp ../$1/sources
 cp exe_in_out ../$1/setup/base_files
+cp build.sh ../$1/setup/obj
 
 echo "projeto $1 criado com sucesso!"
