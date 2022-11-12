@@ -81,12 +81,14 @@ $ build_c "${classes[@]}"
 ```
 `obs`: você só pode executar este comando no diretorio: `~/IDE_termux_cpp/[nome do projeto]`
 
-com isso basta você executar: 
+com isso basta você executar o seguinte comando na pasta `~/IDE_termux_cpp/[nome_do_projeto]/sources`: 
 
 ```bash
 clang++ [nome_da_class_1].o [nome_da_class_2].o ... [nome_da_class_n].o main.o -o [nome_do_executavel]
 ```
 pronto! basta executar com o `./[nome_do_executavel]`
+
+
 
 *essa foi uma forma de facilitar o desenvolvimentoem c++ pelo celular para pessoas que como eu, não possuem acesso ao computadores. Acho que não é a melhor abordagem, mas pelo menos para mim facilitou um pouco a ser mais """produtivo""".* 
 
