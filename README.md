@@ -21,7 +21,7 @@ $ vim ~/.bash_aliases
 ```bash
 alias new_p='./config/new_project.sh'
 alias new_c='../config/new_class.sh'
-alias build_run='../config/build.sh'
+alias build_c='../config/build.sh'
 ```
 Após isso salve o arquivo e execute o comando abaixo:
 ```bash
@@ -57,9 +57,9 @@ Neste arquivo serão colocados os nomes das classes que serão  criadas, cada li
 
 **forma de preenchimento do arquivo name_class.txt:**
 <ul>
-    <li> no inicio de cada linha informe o numero correspondente da linha, começando do zero</li>
-    <li> na mesma linha, de um espaço e coloque o nome da classe (recomendado com a primeira letra maiuscula) </li>
-    <li> reproduza o mesmo procedimento acima para outras classes que você dejesar adicionar</li>
+    <li> no inicio de cada linha informe o numero correspondente da linha, começando do zero.</li>
+    <li> na mesma linha, de um espaço e coloque o nome da classe (recomendado com a primeira letra maiuscula).</li>
+    <li> reproduza o mesmo procedimento acima para outras classes que você desejar adicionar.</li>
 </ul>
 
 **proximo passo**
@@ -75,10 +75,18 @@ $ new_c "${classes[@]}"
 ```
 `obs`: para a criação de uma nova classe você deve está no diretorio: `~/IDE_termux_cpp/[nome do projeto]`
 
-**construir e executar:**
+**produzir os objetos das classes:**
 ```bash 
-$ build_run [nome do projeto] [nome da classe]
+$ build_c "${classes[@]}"
 ```
 `obs`: você só pode executar este comando no diretorio: `~/IDE_termux_cpp/[nome do projeto]`
 
+com isso basta você executar: 
+
+```bash
+clang++ [nome_da_class_1].o [nome_da_class_2].o ... [nome_da_class_n].o main.o -o [nome_do_executavel]
+```
+pronto! basta executar com o `./[nome_do_executavel]`
+
+*essa foi uma forma de facilitar o desenvolvimentoem c++ pelo celular para pessoas que como eu, não possuem acesso ao computadores. Acho que não é a melhor abordagem, mas pelo menos para mim facilitou um pouco a ser mais """produtivo""".* 
 
